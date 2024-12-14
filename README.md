@@ -1,3 +1,65 @@
+# Project Name
+
+A brief description of your project. Explain what it does and why it is useful.
+
+
+### 1. Clone the Repository
+
+Start by cloning this repository to your local machine:
+
+```bash
+git clone https://github.com/DevOps-Engineering-me/Multi-stage-Docker-Build.git
+```
+
+
+### 2. Navigate to the Project Directory
+
+Go to the folder where the repository was cloned:
+
+```bash
+cd Multi-stage-Docker-Build
+```
+
+### 3. Build the Docker Image
+
+Build the Docker image using the `Dockerfile` included in the project:
+
+```bash
+docker build -t my-app:latest .
+```
+
+
+### 4. Run the Docker Container
+
+Run the container using the built image:
+
+```bash
+docker run -p 3000:3000 my-app
+```
+
+- Replace `<host_port>` with the port you want to use on your local machine.
+- Replace `<container_port>` with the port the application uses inside the container.
+- Replace `<image_name>` with the name of the Docker image you built earlier.
+
+### 5. Access the Application
+
+Once the container is running, access the application by navigating to:
+
+```
+http://localhost:3000
+```
+
+Replace `<host_port>` with the port you specified in the previous step.
+
+## Stopping the Container
+
+To stop the container, use the following command:
+
+```bash
+docker ps
+```
+
+
 # Multi-Stage Dockerfile Explanation
 
 ## **Stage 1: Builder**
